@@ -10,77 +10,98 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <!--Header-->
 
-<!--Header-->
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="favicon.png" />
 
-<!--Body-->
-<body>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- Open Graph (OG) Meta Tags for iMessage & Social Media -->
+    <meta property="og:title" content="🔥 Diabolical Tic Tac Toe 🔥" />
+    <meta
+      property="og:description"
+      content="Play the most diabolical Tic Tac Toe game ever! Are you ready to dominate?"
+    />
+    <meta property="og:image" content="https://yourwebsite.com/thumbnail.jpg" />
+    <meta property="og:url" content="https://yourwebsite.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card (For Twitter Previews) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="🔥 Diabolical Tic Tac Toe 🔥" />
+    <meta
+      name="twitter:description"
+      content="Play the most epic Tic Tac Toe game ever! Are you ready to dominate?"
+    />
+    <meta
+      name="twitter:image"
+      content="https://yourwebsite.com/thumbnail.jpg"
+    />
+  </head>
+
+  <!--Body-->
+  <body>
     <div id="gameContainer">
+      <h1>
+        Diabolical<br />
+        🔥Tic Tac Toe🔥
+      </h1>
 
-        <h1>
-            Diabolical<br>
-            🔥Tic Tac Toe🔥</h1>
+      <div id="cellContainer">
+        <div cellIndex="0" class="cell"></div>
+        <div cellIndex="1" class="cell"></div>
+        <div cellIndex="2" class="cell"></div>
+        <div cellIndex="3" class="cell"></div>
+        <div cellIndex="4" class="cell"></div>
+        <div cellIndex="5" class="cell"></div>
+        <div cellIndex="6" class="cell"></div>
+        <div cellIndex="7" class="cell"></div>
+        <div cellIndex="8" class="cell"></div>
+      </div>
 
-        <div id="cellContainer">
-            <div cellIndex="0" class="cell"></div>
-            <div cellIndex="1" class="cell"></div>
-            <div cellIndex="2" class="cell"></div>
-            <div cellIndex="3" class="cell"></div>
-            <div cellIndex="4" class="cell"></div>
-            <div cellIndex="5" class="cell"></div>
-            <div cellIndex="6" class="cell"></div>
-            <div cellIndex="7" class="cell"></div>
-            <div cellIndex="8" class="cell"></div>
-        </div>
+      <h2 id="statusText"></h2>
 
-        <h2 id="statusText"></h2>
+      <button id="restartButton">Restart Game</button>
 
-        <button id="restartButton">Restart Game</button>
+      <br /><br />
 
-        <br><br>
+      <img
+        src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDA1Z3psYnRtd3lpeTltMTB0OWc2a3Zmc255YWNhZjVlbmViMHNkMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oZYBdbW7TnhEQ/giphy.gif"
+        alt="Fire GIF"
+        width="50"
+      />
 
-        
+      <br /><br />
 
-        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDA1Z3psYnRtd3lpeTltMTB0OWc2a3Zmc255YWNhZjVlbmViMHNkMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oZYBdbW7TnhEQ/giphy.gif" alt="Fire GIF" width="50">
+      <b4>Music Controls: </b4>
 
-        <br><br>
+      <audio id="myAudio">
+        <source
+          src="music/Artlist Musical Logos - Ancient Secret Uncovered.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
 
-        <b4>Music Controls: </b4>
+      <button onclick="playAudio()">Play</button>
+      <button onclick="pauseAudio()">Stop</button>
 
-        <audio id="myAudio">
-            <source src="music/Artlist Musical Logos - Ancient Secret Uncovered.mp3" type="audio/mpeg">
-        </audio>
-        
-        <button onclick="playAudio()">Play</button>
-        <button onclick="pauseAudio()">Stop</button>
-        
-        <script src="script.js"></script>
+      <script src="script.js"></script>
 
-        <script>
-            window.onload = function() {
-                document.getElementById('myAudio').play();
-            };
-        </script>
-
-
+      <script>
+        window.onload = function () {
+          document.getElementById("myAudio").play();
+        };
+      </script>
     </div>
 
     <script src="index.js"></script>
-
-
-</body>
-
-
-
-
-
-
+  </body>
 </html>

@@ -1,0 +1,56 @@
+/* Project: Tic Tac Toe
+** Author: Ari Everett
+** Date: Feb 16, 2025
+** Description: My first project using HTML, CSS, and JavaScript. A simple Tic Tac Toe game.
+*/
+
+/* cellContainer */
+.cell {
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+    color: red
+}
+
+/* styling for the game container */
+
+#gameContainer {
+    /* font-family: "Courier New", cursive; */
+    text-align: center;
+}
+
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('fonts/oldEnglish.ttf') format('woff2'),
+         url('fonts/oldGerman.ttf') format('woff'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'CustomFont', sans-serif;
+    background-color: black;
+    color: red;
+}
+
+
+/* styling for the cell container */
+#cellContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+}
+
+.fire-icone::before {
+    content: "\1F525";
+    content: "🔥";
+    font-size: 20px;
+}
+
+

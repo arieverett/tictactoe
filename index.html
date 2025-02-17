@@ -1,0 +1,86 @@
+<!--/
+
+* Project: Tic Tac Toe
+** Author: Ari Everett
+** Date: Feb 16, 2025
+** Description: My first project using HTML, CSS, and JavaScript. A simple Tic Tac Toe game.
+
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!--Header-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!--Body-->
+<body>
+    <div id="gameContainer">
+
+        <h1>
+            Diabolical<br>
+            🔥Tic Tac Toe🔥</h1>
+
+        <div id="cellContainer">
+            <div cellIndex="0" class="cell"></div>
+            <div cellIndex="1" class="cell"></div>
+            <div cellIndex="2" class="cell"></div>
+            <div cellIndex="3" class="cell"></div>
+            <div cellIndex="4" class="cell"></div>
+            <div cellIndex="5" class="cell"></div>
+            <div cellIndex="6" class="cell"></div>
+            <div cellIndex="7" class="cell"></div>
+            <div cellIndex="8" class="cell"></div>
+        </div>
+
+        <h2 id="statusText"></h2>
+
+        <button id="restartButton">Restart Game</button>
+
+        <br><br>
+
+        
+
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDA1Z3psYnRtd3lpeTltMTB0OWc2a3Zmc255YWNhZjVlbmViMHNkMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oZYBdbW7TnhEQ/giphy.gif" alt="Fire GIF" width="50">
+
+        <br><br>
+
+        <b4>Music Controls: </b4>
+
+        <audio id="myAudio">
+            <source src="music/Artlist Musical Logos - Ancient Secret Uncovered.mp3" type="audio/mpeg">
+        </audio>
+        
+        <button onclick="playAudio()">Play</button>
+        <button onclick="pauseAudio()">Stop</button>
+        
+        <script src="script.js"></script>
+
+        <script>
+            window.onload = function() {
+                document.getElementById('myAudio').play();
+            };
+        </script>
+
+
+    </div>
+
+    <script src="index.js"></script>
+
+
+</body>
+
+
+
+
+
+
+</html>
